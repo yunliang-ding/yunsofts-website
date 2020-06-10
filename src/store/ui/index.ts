@@ -6,19 +6,19 @@ class UI {
   }
   @observable menus = [{
     key: 'server1',
-    name: 'server1',
+    name: '我的工作台',
     entry: 'http://49.233.85.54:8001',
     activeRule: '/workbench',
     active: true,
   },{
     key: 'server2',
-    name: 'server2',
+    name: '我的音乐',
     entry: 'http://49.233.85.54:8002',
     activeRule: '/music',
     active: false,
   },{
     key: 'server3',
-    name: 'server3',
+    name: '我的组件',
     entry: 'http://49.233.85.54:8003',
     activeRule: '/ryui',
     active: false,

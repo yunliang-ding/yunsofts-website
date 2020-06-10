@@ -1,6 +1,5 @@
 import * as React from "react"
 import { observer, inject } from 'mobx-react'
-import { toJS } from 'mobx'
 import './index.less'
 @inject('UI')
 @observer

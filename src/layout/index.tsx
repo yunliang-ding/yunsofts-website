@@ -1,6 +1,6 @@
 import * as React from "react"
 import { observer, inject } from 'mobx-react'
-import { Header, Content, Footer} from 'component/index'
+import { Header, Content } from 'component/index'
 import './index.less'
 @inject('UI')
 @observer

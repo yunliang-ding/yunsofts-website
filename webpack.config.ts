@@ -83,7 +83,20 @@ const config = {
     contentBase: './www',
      historyApiFallback:{
       index:'index.html'
-    }
+    },
+    proxy: [{
+      context: ['/workbench'],
+      target: `http://${getIPAdress()}:8001`,
+      // pathRewrite: { '^/workbench': '' },
+      changeOrigin: true,
+      secure: true
+    },{
+      context: ['/musicapi'],
+      target: `http://${getIPAdress()}:8002`,
+      // pathRewrite: { '^/workbench': '' },
+      changeOrigin: true,
+      secure: true
+    }]
   },
   optimization: process.env.NODE_ENV === "production" ? {
     minimize: true

@@ -17,7 +17,9 @@ class Header extends React.Component<any, any> {
   render() {
     return <div className='micro-app-header'>
       <div className='micro-app-header-left'>
-        <i className={'iconfont icon-langchaoyun'}></i>
+        <div className='iconfont'>
+          <img src={'/static/image/logo.svg'} />
+        </div>
         <span>微应用平台</span>
       </div>
       <div className='micro-app-header-right'>

@@ -8,7 +8,7 @@ class UI {
     key: 'server1',
     name: '我的工作台',
     entry: 'http://49.233.85.54:8001',
-    activeRule: '/workbench',
+    activeRule: '/work#/home/development/yunsofts-website',
     active: true,
   },{
     key: 'server2',

@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "name": "react-pc-template",
+      "name": "yunsofts-website",
       "script": "server.js",
       "ignore-watch": "node_modules",
       "exec_mode": "cluster",

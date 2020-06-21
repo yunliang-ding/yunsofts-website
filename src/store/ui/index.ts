@@ -4,26 +4,34 @@ class UI {
   @action setLoading = (loading: boolean): void => {
     this.loading = loading
   }
+  @observable loadMenu = ['workbench']
   @observable menus = [{
-    key: 'server1',
-    name: '我的工作台',
-    entry: 'http://49.233.85.54:8001',
-    activeRule: '/work#/home/development/yunsofts-website',
-    active: true,
-  },{
-    key: 'server2',
-    name: '我的音乐',
-    entry: 'http://49.233.85.54:8002',
-    activeRule: '/music',
+    key: 'react-ryui',
+    name: '组件中心',
+    icon: 'icon-zujian',
+    entry: 'http://49.233.85.54:8003',
     active: false,
   },{
-    key: 'server3',
-    name: '我的组件',
-    entry: 'http://49.233.85.54:8003',
-    activeRule: '/ryui',
+    key: 'cloud-record',
+    name: '云事办',
+    icon: 'icon-task-line',
+    entry: 'http://49.233.85.54:8004',
+    active: false,
+  },{
+    key: 'music.163',
+    name: '云音乐',
+    icon: 'icon-wangyiyunyinlezizhi-copy',
+    entry: 'http://49.233.85.54:8002',
+    active: false,
+  },{
+    key: 'mock-ui',
+    name: '原型设计',
+    icon: 'icon-UI1',
+    entry: 'http://49.233.85.54:8005',
     active: false,
   }]
   @action setMenuActive = (key) => {
+    this.loadMenu.push(key)
     this.menus.forEach(menu => {
       menu.active = menu.key === key
     })

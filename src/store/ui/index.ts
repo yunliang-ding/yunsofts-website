@@ -4,13 +4,13 @@ class UI {
   @action setLoading = (loading: boolean): void => {
     this.loading = loading
   }
-  @observable loadMenu = ['workbench']
+  @observable loadMenu = ['react-ryui']
   @observable menus = [{
     key: 'react-ryui',
     name: '组件中心',
     icon: 'icon-zujian',
     entry: 'http://49.233.85.54:8003',
-    active: false,
+    active: true,
   },{
     key: 'cloud-record',
     name: '云事办',

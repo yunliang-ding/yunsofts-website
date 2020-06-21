@@ -9,6 +9,14 @@ class Layout extends React.Component<any, any> {
   constructor(props) {
     super(props)
   }
+  componentDidMount(){
+    let menu = this.props.UI.menus.find(menu => {
+      return menu.key === location.pathname
+    })
+    if(menu){
+      this.props.UI.setMenuActive(menu.key)
+    }
+  }
   render() {
     const { loadMenu, menus } = this.props.UI
     return <div className='micro-app-layout'>

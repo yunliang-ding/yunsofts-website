@@ -1,6 +1,7 @@
 import * as React from "react"
 import { observer, inject } from 'mobx-react'
 import { Tooltip } from 'react-ryui'
+import { browserHistory } from 'react-router'
 import './index.less'
 @inject('UI')
 @observer
@@ -20,6 +21,7 @@ class Sider extends React.Component<any, any> {
             onClick={
               () => {
                 setMenuActive(menu.key)
+                browserHistory.push(menu.key)
               }
             }
           >

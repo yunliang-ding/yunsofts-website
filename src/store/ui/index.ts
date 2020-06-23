@@ -6,6 +6,12 @@ class UI {
   }
   @observable loadMenu = ['react-ryui']
   @observable menus = [{
+    key: '/app/cloud-music',
+    name: '云音乐',
+    icon: 'icon-wangyiyunyinlezizhi-copy',
+    entry: 'http://49.233.85.54:8002',
+    active: false,
+  },{
     key: '/app/react-ryui',
     name: '组件中心',
     icon: 'icon-zujian',
@@ -18,16 +24,16 @@ class UI {
     entry: 'http://49.233.85.54:8004',
     active: false,
   },{
-    key: '/app/cloud-music',
-    name: '云音乐',
-    icon: 'icon-wangyiyunyinlezizhi-copy',
-    entry: 'http://49.233.85.54:8002',
-    active: false,
-  },{
     key: '/app/mock-ui',
     name: '原型设计',
     icon: 'icon-UI1',
     entry: 'http://49.233.85.54:8005',
+    active: false,
+  },{
+    key: '/app/cloud-topic',
+    name: '云习题',
+    icon: 'icon-timu',
+    entry: 'http://49.233.85.54:8006',
     active: false,
   }]
   @action setMenuActive = (key) => {
